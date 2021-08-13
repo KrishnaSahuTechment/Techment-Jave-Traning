@@ -1,0 +1,30 @@
+Notes:  about Jdbc 
+-------------------------------------------------------------------
+step1: step1 load the driver class 
+
+Class.forName("com.mysql.cj.jdbc.Driver");
+		
+---------------------------------------------------------------------
+step2:  create the connection
+String url = "jdbc:mysql://localhost:3306/techment?autoReconnect=true&useSSL=false";
+String id = "root";
+String password ="root"; 
+
+Connection con = DriverManager.getConnection(url, id, password);
+-------------------------------------------------------------------
+step3:  prepare statements or statement
+Statement: it is used for static query
+Prepare statement: it is  used for dynamic query it is also known as parametrized query
+
+-------------------------------------------------------------------
+Step:4 execute the query
+boolean execute();  (sql)(insert,update,delete)
+int updateExecute(); ()
+ResultSets queryExecute()  //for retrive purpose
+-------------------------------------------------------------------
+CRUD
+C: Create
+R: Retrive
+U: Update
+D: Delete
+
