@@ -1,0 +1,40 @@
+Day13:
+-------
+java 8 features:
+--------------------
+functional interface
+lamba expression
+method refrence
+stream Api
+new date time
+------------------------------------
+method reference:
+------------------
+-->It will refers method, to a functional interface.
+-->to give defination for function interface,we se lamba expression.
+-->In place of lambda we can use mehtod reference(::)
+
+overriding:
+------------
+sub class 
+Anonomys
+lamda expression(functional interface)
+method reference
+----------------------------------------
+Method Reference
+================
+1. non static or instance
+2. static method
+3. constructor reference
+===============================================
+1) declare a functional interface which has largest() and  has 3 parameters
+which has largest 
+
+--> write lambda expression which is the largest number.
+--> write using method reference.
+
+
+=======================
+sorted() ->it will do default natural sorting.
+
+

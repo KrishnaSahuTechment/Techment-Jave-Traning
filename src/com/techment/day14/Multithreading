@@ -1,0 +1,106 @@
+Multithreading:
+--------------
+Thread: -> task
+multithreading:-> multi-tasking
+
+Multithreading:
+--------------
+2 types:
+
+A)Process based---> os will manage the scheduling --> heavy weight
+						different program run simultaneously
+						Ex. google meet, eclipse,word,..
+						
+B)Thread Based ---> A program is sub divided into number of subprogram
+					 and they run simultaneously.
+					 eg. eclipse-> typing,compiling,grammer spell,lines count,word count.
+					light weight.
+					 
+Life cycle:
+----------	
+1.New born
+2. Runnable
+3. Running
+4. Blocked
+5. Dead state.
+
+1.) New Born:
+------------
+we create the object for the inbulit Thread class.
+It is present in side the lang package.
+
+class Employee extends Thread Or implements runnable
+	
+{
+}
+
+Employee emp = new Employee();
+
+emp.start();
+
+
+
+2.)Runnable State:
+-----------------
+It is ready for execution but waiting for the processor avaibility.
+
+
+3.) Running state:
+-----------------
+The processor has given time for the thread to run while
+running the thread can go to following conditions.
+suspend() --> resume()
+sleep(10000)
+waite()--> notify() or notifyAll()
+
+4.) Blocked state:
+------------------
+It is not allowing the thred to enter into running and runnable state
+respectively.
+
+5.)Dead state:
+-------------
+-> once the task is completed it will go to dead state.
+-> when we call stop(), it will go to the state.
+=========================================================================================
+To do multi-tasking we need minimum two inbuilt method which is run and start.
+
+run():-> to keep our task.
+	  -> It is like main method it can call some other method.
+	 -> for one class there shouldl be only one run method.
+	  
+start():-> tp call the run method and perform multi-tasking
+
+eg. normal call 				multitasking
+---
+	void display();				void run()
+	
+call:
+	obj.display()				obj.start();
+
+
+lang package:
+-------------
+interface Runnable
+{
+	public void run();
+
+}	
+	
+class thread implements Runnable
+{	
+	run();
+	Start();
+	stop();
+	sleep();...
+	
+}
+
+=======================================================================================
+How to create thread
+---------------------
+1) by extends Thread (run+start)
+2) by implementing runnnable (Run)
+
+=======================================================================================
+class Employee extends 			 

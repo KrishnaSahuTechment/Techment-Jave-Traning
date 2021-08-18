@@ -1,0 +1,61 @@
+Annonomys inner class:
+
+A class wtihout name.it is used for overriding
+=============================
+Functional Interface:
+------------------------------
+A interface which has single abstract method(SAM)  is known as functional interface.
+
+@override,@FunctionalInterface
+==============================
+Funnctional Interface
+--------------------------------
+form JDK 1.8 onward interfcace can contain default and static method 
+
+why we use functional interface :
+---------------------------------
+to achive lambda expression
+
+
+int a = 10;
+String emp ="Krishna";
+
+Employee emp = new Employee();
+
+
+we are storing a method in a variable. 
+
+===================================================================================
+Predicate:
+----------
+-> It is functional interface
+-> It takes one parameters and returns boolean.
+-> It has boolean test(T t)
+
+Function:
+---------
+-> It is functional interface
+-> It takes one parameters and returns boolean.
+-> It has boolean T apply(T t)
+====================================================================================
+Stream:
+-------
+It is a pipeline to process the data.
+
+
+diffence between collectio vs stream:
+--------------------------------------
+collection:								Stream:
+It is used to store the data  		It is used to precess the data		
+
+===================================================================================
+Stream:
+------
+Intermediate operation:				terminate operation:
+----------------------				-------------------
+after processing again it returns stream
+
+filter
+==============
+
+
