@@ -103,4 +103,92 @@ How to create thread
 2) by implementing runnnable (Run)
 
 =======================================================================================
-class Employee extends 			 
+class Employee extends 	
+
+=====================================================================================
+main is the Parent thread for all  the threads.
+to find the current thread execution:
+--------------------------------------
+Thread.currentThread().getName()
+ =====================================================
+ Thread Priority:
+ ================
+   --> we can assign a priority to the  thread.
+   --> Priority value ranges from 1 to 10.
+   1-> minimum
+   10->maximum
+   5->default
+======================================================================================
+Synchronization:
+-----------------
+ when ever there is a shared resource , at the time only one thread can able 
+ to access the shared resource.
+ 
+ eg. balence-> withdraw ,deposit
+ 	pen-> person1,person2,person3
+ =====================================================================================
+ waite and notify():
+ -------------------
+ 
+ Interthread Communication:
+ --------------------------
+ 	-> It is all about making synchronized thread to communicate each other.
+ 	 it can be achieved by waite and notify(),notifyAll()
+ 	 
+ 	 balence=> Shared resources
+ =======================================================================================
+ core java:
+ ----------
+ logical
+ oops,excception,collection,java 8(functional interface,stream,lamda,date),jadbc
+ 
+ API:
+ ----
+ File,JDBC,collections,Stream
+ --------------------------------------------------------------------------------------
+ Servlet:
+ --------
+ To Create web application in java we use servlet
+ 
+ web application:
+ ---------------
+ It is nothing but client server archietecture
+ 
+ Before Serverlet:
+ ----------------
+ CGI: common gateway interface.
+ 		->It is process based technology.
+ 		-> Each request will take as process.
+ Disadvantage:
+ -------------
+ if no of users increases server not responses
+ 
+ Servlet:
+ ========
+ -> Servlet is an interface(I).
+ -> It contains abstract method.
+ 			init()
+ 			service()
+ 			destroy()
+ GenericServlet(Abstract class)
+ -------------------------------
+ --> It is protocol independent(support any protocols)
+ 
+ 
+ 
+ 
+ HttpServlet(Abstrac class)
+ --------------------------
+ --> It is protocol dependent
+ 
+ 
+ 
+ Userdefined class
+ -----------------
+ 
+ 	  	
+ 	
+
+
+
+		 

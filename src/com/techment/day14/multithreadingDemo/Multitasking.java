@@ -31,7 +31,7 @@ class Parul extends Thread
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-				System.out.println("sanika: "+i+"msg: Take vaccination");
+				System.out.println("Parul: "+i+"msg: Take vaccination");
 				
 			}
 			
@@ -48,7 +48,7 @@ class Aman extends Thread
 	{
 		for(int i=1;i<=8;i++)
 		{
-			System.out.println("sanika: "+i+"msg: Covid19 is not yet cover");
+			System.out.println("Aman: "+i+"msg: Covid19 is not yet cover");
 		}
 		
 	}
