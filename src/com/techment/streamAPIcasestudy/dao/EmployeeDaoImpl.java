@@ -4,6 +4,7 @@ import com.techment.streamAPIcasestudy.model.Employee;
 import com.techment.streamAPIcasestudy.utility.CollectionUtil;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class EmployeeDaoImpl implements IEmployeeDao {
 
@@ -40,6 +41,22 @@ public class EmployeeDaoImpl implements IEmployeeDao {
 		return employeeList;
 	}
 
+	
+	public void sumSalary(ArrayList<Employee> employees) 
+	{	
+		/*
+		 * Description: this method is to find sum of salary of all employees. 
+		 * method name: sumSalary
+		 * @param: employees
+		 * return: void
+		 * @author: Krishna
+		 * Created Date: 18/08/2021
+		 *  
+		 * */	
+		
+		double sumSalaries =  employees.stream().collect(Collectors.summarizingDouble(Employee::getSalary)).getSum();
+		System.out.println("Total  Salary: "+sumSalaries);
+	}
 }
 
 

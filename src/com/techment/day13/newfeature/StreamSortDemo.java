@@ -68,7 +68,7 @@ public class StreamSortDemo {
 		System.out.println("===========================================================================");
 		System.out.println("salary 20%:");
 			
-		employees.stream().map(e->"name: "+e.getName()+" Salary: "+e.getSalary()+" Salary increased by 20% : "+(e.getSalary()+e.getSalary()*0.20)).forEach(System.out::println);
+		employees.stream().map(e->" name: "+e.getName()+" Salary: "+e.getSalary()+" Salary increased by 20% : "+(e.getSalary()+e.getSalary()*0.20)).forEach(System.out::println);
 	
 		System.out.println("===========================================================================");
 		System.out.println("name of employees salary 20%:");
